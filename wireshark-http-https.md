@@ -10,8 +10,9 @@
 * TCP Flags: PSH,ACK
 * This f frame is a (suspected) out-of-order segment
 * Severity level: Warning
-
-В трафике обнаружена передача данных в незашифрованном виде, так же замечены сетевые задержки и пакеты "out-of-order segment", что говорит о нестабильности сетевого канала.
+#### Анализ:
+1. В трафике обнаружена передача данных в незашифрованном виде
+2. Замечены сетевые задержки и пакеты "out-of-order segment", что говорит о нестабильности сетевого канала
 #### Итог:
 1. Статус: Низкий уровень угрозы
 2. Рекомендуется перевести данный веб-ресурс на безопасное подключение(HTTPS), для исключение перехвата данных (MITM)
@@ -33,7 +34,8 @@
 8. Destination Port: 443
 9. Flags: 0x18 (PSH, ACK)
 10. Handshake Protocol: Client Hello
-
+11. Extension: server_name (len=15) name=google.com
+12. Server Name: google.com
 #### Итог:
 Статус: Безопасно
 
@@ -43,6 +45,7 @@
 <img width="708" height="388" alt="изображение" src="https://github.com/user-attachments/assets/ef7b5f9c-3159-4ca6-a40f-45dc56628e20" />
 <img width="926" height="440" alt="изображение" src="https://github.com/user-attachments/assets/ae0eec6e-28f1-4e57-9ceb-74139739518b" />
 <img width="1730" height="313" alt="изображение" src="https://github.com/user-attachments/assets/408ee0c2-5791-48c2-b1e8-76c63ecc802e" />
+<img width="573" height="167" alt="изображение" src="https://github.com/user-attachments/assets/bfc6407e-4bac-4484-a169-8ef631e5659b" />
 
 
 
